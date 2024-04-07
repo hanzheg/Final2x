@@ -103,6 +103,7 @@ class MyProgressDialogs {
 }
 
 function StartSR(): void {
+  console.log("start");
   if (StartCommandLock.value) {
     MyProgressNotifications.SRprocessing()
     return
@@ -121,7 +122,7 @@ function StartSR(): void {
   const command = getFinal2xconfig()
 
   CommandLOG.value += '\n' + JSON.stringify(deviceList.value) + '\n' + command + '\n'
-
+  console.log(CommandLOG.value);
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   window.electron.ipcRenderer.send('execute-command', command)

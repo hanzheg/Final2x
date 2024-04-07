@@ -11,7 +11,8 @@ export const modelOptions: SelectOption[] = [
   { label: 'RealESRGAN-anime', value: 'RealESRGAN-anime' },
   { label: 'Waifu2x-cunet', value: 'Waifu2x-cunet' },
   { label: 'Waifu2x-upconv_7_anime_style_art_rgb', value: 'Waifu2x-upconv_7_anime_style_art_rgb' },
-  { label: 'Waifu2x-upconv_7_photo', value: 'Waifu2x-upconv_7_photo' }
+  { label: 'Waifu2x-upconv_7_photo', value: 'Waifu2x-upconv_7_photo' },
+  { label: 'APISR', value: 'APISR' }
 ]
 
 /**
@@ -46,7 +47,8 @@ export const modelScaleOptions: ModelScaleOptionsType = {
     { label: '2', value: 2 }
   ],
   'Waifu2x-upconv_7_anime_style_art_rgb': [{ label: '2', value: 2 }],
-  'Waifu2x-upconv_7_photo': [{ label: '2', value: 2 }]
+  'Waifu2x-upconv_7_photo': [{ label: '2', value: 2 }],
+  'APISR': [{ label: '2', value: 2 }]
 }
 
 /**

@@ -6,7 +6,7 @@ let child
 
 export async function RunCommand(event, config_json: string): Promise<void> {
   let resourceUrl: string
-
+  console.log(config_json)
   // ---- 还是直接传base64吧
   // config_json = JSON.stringify(config_json) // 转义转义
   // ----
